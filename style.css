@@ -1,0 +1,255 @@
+/* Write all your CSS here */
+
+/* Please indent properly */
+
+/* Please use only lower-case letters */
+
+/* Your webpage should be 100% responsive!!! */
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+
+p, h2 {
+    margin: 0;
+}
+
+/* part one nav */
+
+nav {
+    display: flex;
+}
+
+#workspace {
+    background-color: #200720;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wp-images {
+    margin: 30px 0px;
+    color: #b29fb3;
+}
+
+#wp-1>img, #wp-2>img, #wp-3>img {
+    height: 50px;
+}
+
+#wp-images div {
+    margin-bottom: 25px;
+}
+
+.cmd p {
+    margin: 0;
+    display: inline-block;
+}
+
+.cmd {
+    display: flex;
+    justify-content: center;
+    /* margin: 10px 0px;  */
+    font-size: 17px;
+}
+
+.cmd img {
+    height: 25px;
+}
+
+#icons i:nth-child(1) {
+    color: #ff6059;
+    margin-right: 5px;
+}
+
+#icons i:nth-child(2) {
+    color: #ffbe2f;
+    margin-right: 5px;
+}
+
+#icons i:nth-child(3) {
+    color: #28c941;
+}
+
+/* part two nav */
+
+#home {
+    background-color: #3f0d40;
+    color: #b29fb3;
+    height: 100%;
+    padding: 0px 20px;
+    max-width: 50%;
+}
+
+#user {
+    margin: 10px 0px;
+}
+
+#profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#profile button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#profile button i {
+    color: #a09a9f;
+    font-size: 10px;
+}
+
+#profile h2 {
+    font-size: 18px;
+    color: white;
+}
+
+#profile i {
+    font-size: 20px;
+}
+
+#user-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#user-name p {
+    font-size: 14px;
+    color: #ab9ba9;
+}
+
+#user-name i {
+    margin-right: 5px;
+    font-size: 10px;
+    color: #37938a;
+}
+
+#jump-to {
+    background: none;
+    border: none;
+    background-color: #250027;
+    color: #c5b7c6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    margin: 5px 0px;
+}
+#reads-threads{
+    margin: 20px 0px;
+}
+#reads-threads i{
+    margin-right: 5px;
+}
+
+#unreads {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#unreads h2 {
+    margin: 0px 0px 0px 5px;
+    font-size: 16px;
+    color: white;
+}
+
+#threads {
+    display: flex;
+    align-items: center;
+}
+
+#threads img {
+    height: 22px;
+}
+
+#threads p {
+    margin: 0;
+    color: #c5b7c6;
+}
+
+/* channels */
+
+#channel {
+    background-color: #3f0d40;
+    margin: 20px 0px;
+}
+
+#chn-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#chn-heading p {
+    font-size: 16px;
+}
+
+.fa-plus {
+    border-radius: 100px;
+    padding: 2px 3px;
+    font-size: 10px;
+    border: 0.5px solid #957a96;
+    margin: 0;
+}
+
+#categories {
+    color: #b29fb3;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+#ctg-name {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#ctg-name i {
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+#ctg-name p {
+    margin: 0;
+}
+
+.showcase {
+    background-color: #1164a3;
+    color: white;
+}
+
+/* direct msgs */
+
+#dir-msg {
+    line-height: 1.8;
+}
+
+#dir-msg div {
+    display: flex;
+    align-items: center;
+}
+
+#dir-msg .dm {
+    justify-content: space-between;
+}
+
+#dir-msg>div i {
+    margin-right: 5px;
+    font-size: 11px;
+}
+/* this right margin on icon is making plus icon having right margin too */
+#dir-msg .lock i {
+    color: #2bac76;
+}
