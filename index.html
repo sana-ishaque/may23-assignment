@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <section id="main-page-layout">
+    <div id="main-page">
         <nav>
-            <!-- part one -->
+            <!-- section 1 -->
             <section id="workspace">
                 <div id="icons">
                     <i class="fas fa-circle"></i>
@@ -192,76 +192,169 @@
             </section>
         </nav>
         <!-- section 2  -->
-        <section class="second-part">
+        <div id="content-area">
             <header>
-                <div id="header-container">
-                    <div id="header-part-1">
-                        <h2>#student-showcase</h2>
-                        <div id="hp1-icons">
-                            <div>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div>
-                                <i class="far fa-user"></i>
-                                <p>116</p>
-                            </div>
-                            <div>
-                                <i class="fas fa-thumbtack"></i>
-                                <p>1</p>
-                            </div>
-                            <div>
-                                <i class="fas fa-pen"></i>
-                                <p>Add a topic</p>
-                            </div>
+                <div id="channel-title">
+                    <h2>#student-showcase</h2>
+                    <div id="infographics">
+                        <div>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-user"></i>
+                            <p>116</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-thumbtack  stroke-transparent"></i>
+                            <p>1</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-pen  stroke-transparent"></i>
+                            <p>Add a topic</p>
                         </div>
                     </div>
-                    <div id="header-part-2">
-                        <div id="hp2-icons">
-                            <div class="str-details">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <i class="fas fa-info"></i>
-                            </div>
-                            <div>
-                                <i class="fas fa-cog"></i>
-                            </div>
-                            <div>
-                                <i class="fas fa-search"></i>
-                                <input type="text" placeholder="Search">
-                            </div>
-                            <div>
-                                <i class="fas fa-at"></i>
-                            </div>
-                            <div>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </div>
+                </div>
+                <div id="channel-icons">
+                    <div>
+                        <i class="fas fa-phone stroke-transparent"></i>
+                    </div>
+                    <div>
+                        <!-- <i class="fas fa-info "></i> -->
+                        <p>i</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-cog stroke-transparent"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-search stroke-transparent"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div>
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
             </header>
-            <!-- part two after header -->
-            <section id="one">
-                <div id="rs">
-                    <div>
-                        <i class="fas fa-heart"></i>
-                        <p>5</p>
+            <section id="channel-content">
+                <hr>
+                <div id="student-showcase-thread">
+                    <!-- left side -->
+                    <!-- first div -->
+                    <div id="emot-reaction">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                            <p>5</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-smile"></i>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <i class="far fa-thumbs-up"></i>
+                            <p>2</p>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fas fa-smile"></i>
-                        <p>2</p>
+                    <div id="user-replies">
+                        <div>
+                            <img src="images/user-6.PNG" alt="user-profile">
+                            <img src="images/profile-1.PNG" alt="user-profile">
+                            <img src="images/user-3.PNG" alt="user-profile">
+                            <img src="images/user-4.PNG" alt="user-profile">
+                        </div>
+                        <div id="replies-details">
+                            <p>10 replies</p>
+                            <p>Last reply 1 day ago </p>
+                        </div>
                     </div>
-                    <div>
-                        <i class="far fa-thumbs-up"></i>
-                        <p>2</p>
+                    <!-- second div -->
+                    <div id="individual-user">
+                        <div id="first-reply">
+                            <div>
+                                <img src="images/profile-1.PNG" alt="user-profile">
+                            </div>
+                            <div id="user-comment">
+                                <div id="name">
+                                    <p>syeda kukab</p>
+                                    <i class="fas fa-comment-dots"></i>
+                                    <time>3:58 AM</time>
+                                </div>
+                                <p>some of y0u msging me my video is not showing content, due to heavey mbs kindly
+                                    download
+                                    it with the specific blue border button which is above on my video
+                                </p>
+                                <div>
+                                    <i class="fas fa-check"></i>
+                                    <p>1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="second-reply">
+                            <!-- add nbackground color to this reply -->
+                            <div>
+                                <i class="fas fa-thumbtack"></i>
+                                <img src="images/profile-1.PNG" alt="user-profile">
+                            </div>
+                            <div>
+                                <p>Pinned by @Mariah Khurshid</p>
+                                <div id="name">
+                                    <p>syeda kukab</p>
+                                    <i class="fas fa-comment-dots"></i>
+                                    <time>2:07 PM</time>
+                                </div>
+                                <p>
+                                    anyone who has completed level 24 help me..i get stuck in last level.
+                                </p>
+                                <div>
+                                    <img src="images/flexbox-froggy.PNG" alt="screenshot">
+                                </div>
+                                <div id="user-replies">
+                                    <div>
+                                        <img src="images/user-5.PNG" alt="user-profile">
+                                        <img src="images/profile-1.PNG" alt="user-profile">
+                                        <img src="images/user-6.PNG" alt="user-profile">
+                                        <img src="images/user-7.PNG" alt="user-profile">
+                                        <img src="images/user-1.PNG" alt="user-profile">
+                                    </div>
+                                    <div id="replies details">
+                                        <p>10 replies</p>
+                                        <p>Last reply 1 day ago </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="thrd-reply">
+                            <div>
+                                <img src="images/user-5.PNG" alt="user-profile">
+                            </div>
+                            <div>
+                                <div id="name">
+                                    <p>syeda kukab</p>
+                                    <i class="fas fa-comment-dots"></i>
+                                    <time>3:58 AM</time>
+                                </div>
+                                <a href="#">https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp</a>
+                                <div>
+                                    <p>Learn the function of @keyframes instead of Marquee tag</p>
+                                </div>
+                                <div>
+                                    <img src="images/w3sxhool.PNG" alt="w3schools logo">
+                                    <p>w3school.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- aside tag comes here if required -->
             </section>
-        </section>
-    </section>
+        </div>
+    </div>
+    <i class="fa fa-cog stroke-transparent"></i>
+
 </body>
 
 </html>
