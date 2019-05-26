@@ -19,6 +19,21 @@ p, h2 {
     display: flex;
 }
 
+fieldset {
+    border: none;
+    border-top: 1px solid #e1e1e1;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    text-align: center;
+    font-size: 13px;
+    padding: 0px 10px;
+    font-weight: bold;
+    color: #1d1c1d;
+}
+
 /* main layout goes here */
 
 /* part one nav */
@@ -272,14 +287,16 @@ nav {
 /* header */
 
 #content-area {
-    padding-left: 30px;
     margin-top: 10px;
+    width:100%;
+
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-left: 30px;
 }
 
 #channel-title h2 {
@@ -383,31 +400,184 @@ header {
     border: 1px solid grey;
     padding: 6px 12px;
 }
+
 /* channel content */
-#emot-reaction{
-    display: flex;
+
+#remaining-part {
+    margin-bottom: 30px;
+    padding-left: 80px;
 }
-#emot-reaction div{
+
+#emot-reaction {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#emot-reaction div {
     display: flex;
     align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 2.5px 6px;
+    margin-right: 5px;
 }
-#channel-content{
-    margin-left: 40px;
-    margin-top: 20px;
+
+#emot-reaction div>p {
+    font-size: 10px;
+    font-weight: bold;
 }
-#user-replies{
-    display: flex;
-}
-#user-replies div img:nth-child(2){
+
+#emot-reaction div img {
     height: 20px;
+    margin-right: 5px;
 }
-#user-replies div img{
-    width: 20px;
+
+#emot-reaction div:nth-child(1) {
+    border: 2px solid #219dd2;
+    background-color: #e8f5fa;
+    color: #1869a6;
+}
+
+#first-reply, #second-reply, #third-reply {
+    padding-left: 30px;
+}
+
+/* #emot-reaction, #user-replies {
+    padding-left: 30px;
+} */
+
+.user-replies {
+    display: flex;
+}
+
+.prof-1 {
+    height: 50px;
+    ;
+}
+
+.user-replies div img {
+    height: 30px;
+    margin-right: 1px;
+}
+
+.replies-details {
+    display: flex;
+    align-items: center
+}
+
+.replies-details div {
+    align-items: center;
+}
+
+.replies-details p {
+    margin-left: 5px;
+}
+
+.replies-details p:nth-child(1) {
+    color: #1164a3;
+    font-size: 10px;
+}
+
+.replies-details p:nth-child(2) {
+    color: #6d6c6d;
+    font-size: 10px;
+}
+
+#first-reply, #name, #second-reply, #third-reply {
+    display: flex;
+}
+
+#user-comment {
+    padding-left: 10px;
+}
+
+#name img {
     height: 20px;
+    margin: 0px 5px;
 }
-#replies-details{
-    display: flex;
+
+#name p {
+    font-weight: bold;
 }
-#first-reply, #name, #second-reply, #thrd-reply{
+
+#name time {
+    color: #626162;
+    font-size: 10px;
+}
+
+#name {
+    align-items: center;
+}
+
+#user-comment div:last-child {
     display: flex;
+    align-items: center;
+    background-color: #e8f5fa;
+    border-radius: 20px;
+    padding: 1.5px 6px;
+    border: 2px solid #219dd2;
+    width: 4%;
+    margin-top: 5px;
+}
+
+#user-comment div:last-child img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+#first-reply {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* second-reply */
+
+#second-reply {
+    background-color: #fef9ec;
+    padding-top: 10px;
+}
+
+#second-reply .pushpin {
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+#pinned-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#sr-user-comment {
+    padding-left: 10px;
+}
+
+#froggy-ss img {
+    max-height: 300px;
+    margin-top: 5px 0px;
+}
+
+/* user replies arent shoing up on other dive though have same class
+ */
+
+#third-reply-user-img img {
+    height: 50px;
+}
+
+.sr-profile-replies {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 5px solid #dddddd;
+}
+
+.sr-profile-replies img {
+    height: 30px;
+}
+
+.sr-profile-replie p {
+    color: #6a696a;
+}
+#third-reply-content{
+    padding-left: 10px;
 }
