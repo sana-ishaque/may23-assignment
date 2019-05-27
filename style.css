@@ -51,7 +51,7 @@ nav {
 }
 
 #wp-images {
-    margin: 30px 0px;
+    margin: 10px 0px;
     color: #b29fb3;
 }
 
@@ -66,17 +66,17 @@ nav {
 .cmd p {
     margin: 0;
     display: inline-block;
+    font-size: 10px;
 }
 
 .cmd {
     display: flex;
     justify-content: center;
     /* margin: 10px 0px;  */
-    font-size: 17px;
 }
 
 .cmd img {
-    height: 25px;
+    height: 15px;
 }
 
 #workspace #icons {
@@ -103,9 +103,8 @@ nav {
 #home {
     background-color: #3f0d40;
     color: #b29fb3;
-    height: 100%;
-    padding: 0px 20px;
-    width: 182px;
+    /* height: 100%; */
+    width: 210px;
 }
 
 #user {
@@ -162,15 +161,31 @@ nav {
     color: #37938a;
 }
 
-#jump-to {
-    background: none;
+#jump-to-input input {
     border: none;
+    background-color: transparent;
+}
+
+#jump-to-input {
     background-color: #250027;
-    color: #c5b7c6;
-    padding: 10px 20px;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
-    max-width: 100%;
-    margin: 5px 0px;
+    color: #c5b7c6;
+    display: flex;
+    align-items: center;
+}
+
+::placeholder {
+    color: #c5b7c6;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#jump-to-input i {
+    color: #c5b7c6;
+    font-size: 12px;
+    margin-right: 5px;
 }
 
 #reads-threads {
@@ -212,6 +227,12 @@ nav {
 #channel {
     background-color: #3f0d40;
     margin: 20px 0px;
+    /* width: 200px; */
+}
+
+#nav-p2-space {
+    width: 80%;
+    margin: auto;
 }
 
 #chn-heading {
@@ -224,7 +245,7 @@ nav {
     font-size: 16px;
 }
 
-.fa-plus {
+.chn-head {
     border-radius: 100px;
     padding: 2px 3px;
     font-size: 10px;
@@ -235,13 +256,12 @@ nav {
 #categories {
     color: #b29fb3;
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #ctg-name {
     display: flex;
     align-items: center;
-    margin-right: 30px;
 }
 
 #ctg-name i {
@@ -251,6 +271,7 @@ nav {
 
 #ctg-name p {
     margin: 0;
+    font-size: 16px;
 }
 
 .showcase {
@@ -264,6 +285,10 @@ nav {
     line-height: 1.8;
 }
 
+#dir-msg div>p {
+    font-size: 16px;
+}
+
 #dir-msg div {
     display: flex;
     align-items: center;
@@ -271,6 +296,10 @@ nav {
 
 #dir-msg .dm {
     justify-content: space-between;
+}
+
+#dir-msg .dm>p {
+    font-size: 16px;
 }
 
 #dir-msg>div i {
@@ -283,13 +312,17 @@ nav {
 #dir-msg .lock i {
     color: #2bac76;
 }
-
+#dir-msg .lock p{
+    color: #bcadbe;
+}
+#dir-msg p{
+    color: #957a96;
+}
 /* header */
 
 #content-area {
     margin-top: 10px;
-    width:100%;
-
+    /* width: 100%; */
 }
 
 header {
@@ -314,6 +347,7 @@ header {
 #infographics div {
     display: flex;
     align-items: center;
+    height: 10px;
 }
 
 #infographics div i {
@@ -389,8 +423,8 @@ header {
 #channel-icons div:nth-child(2) p {
     border: 2px solid #1d1c1d;
     border-radius: 50px;
-    padding: 1px 7px;
-    font-size: 10px;
+    padding: 2px 7px;
+    font-size: 8px;
     font-weight: bold;
     color: #1d1c1d;
 }
@@ -402,6 +436,10 @@ header {
 }
 
 /* channel content */
+
+#channel-content {
+    display: flex;
+}
 
 #remaining-part {
     margin-bottom: 30px;
@@ -441,10 +479,6 @@ header {
 #first-reply, #second-reply, #third-reply {
     padding-left: 30px;
 }
-
-/* #emot-reaction, #user-replies {
-    padding-left: 30px;
-} */
 
 .user-replies {
     display: flex;
@@ -557,9 +591,6 @@ header {
     margin-top: 5px 0px;
 }
 
-/* user replies arent shoing up on other dive though have same class
- */
-
 #third-reply-user-img img {
     height: 50px;
 }
@@ -578,6 +609,172 @@ header {
 .sr-profile-replie p {
     color: #6a696a;
 }
-#third-reply-content{
+
+#third-reply-content {
     padding-left: 10px;
+}
+
+#third-reply {
+    margin-top: 10px;
+}
+
+#message-cc i {
+    color: #999999;
+    border: none;
+}
+
+#message-cc .input-field {
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.input-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1fa\f118";
+    /* color: #676667; */
+    right: 35px;
+    top: 10px;
+    position: absolute;
+
+}
+
+.icon {
+    padding: 10px;
+    color: #999999;
+    min-width: 20px;
+    text-align: center;
+    border-right: 1px solid #999999;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+/* aside tag */
+
+aside {
+    border: 1px solid #ebebeb;
+}
+
+#heading {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ebebeb;
+}
+
+h2 {
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid rgba(black, 0.1);
+    font-size: 1.1em;
+    position: relative;
+    padding: 0;
+}
+
+details {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(black, 0.1);
+}
+
+summary {
+    display: block;
+    user-select: none;
+    outline: none;
+    padding: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ebebeb;
+    color: #1d1c1d;
+}
+
+#channel-detail summary::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f129";
+    margin-right: 0.5em;
+    color: #8a898a;
+    /* border-radius: 50px;
+    border-bottom: 1px solid #ebebeb; */
+}
+
+.bold-text {
+    color: #676667;
+    font-weight: bold;
+}
+
+#content {
+    padding: 0px 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.qta {
+    color: #676667;
+    font-weight: bold;
+}
+
+#questions-try-asking {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#questions-try-asking img {
+    height: 50px;
+}
+
+#questions-try-asking h4 {
+    margin: 0;
+}
+
+#questions-try-asking div {
+    margin-left: 10px;
+}
+
+#questions-try-asking p {
+    margin: 0px;
+    color: #6b6b6b;
+}
+
+#rc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#rc p {
+    margin: 0;
+}
+
+.rc-channel-name {
+    font-weight: bold;
+}
+
+#rc div {
+    display: flex;
+    align-items: center;
+    color: #616061;
+    /* font-size: 10px; */
+}
+
+#rc div i, p {
+    font-size: 20px;
+}
+
+#rc div i {
+    margin-right: 8px;
 }
