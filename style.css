@@ -140,6 +140,7 @@ nav {
 
 #user {
     margin: 10px 0px;
+    padding: 0 1em;
 }
 
 #profile {
@@ -205,6 +206,7 @@ nav {
     color: #c5b7c6;
     display: flex;
     align-items: center;
+    margin: 0 10px
 }
 
 ::placeholder {
@@ -231,6 +233,7 @@ nav {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    padding: 0 1em;
 }
 
 #unreads h2 {
@@ -242,6 +245,7 @@ nav {
 #threads {
     display: flex;
     align-items: center;
+    padding: 0 1em;
 }
 
 #threads img {
@@ -261,20 +265,17 @@ nav {
     /* width: 200px; */
 }
 
-#nav-p2-space {
-    width: 80%;
-    margin: auto;
-}
-
 #chn-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1em;
 }
 
 #ctg-name {
     text-decoration: none;
     color: #b29fb3;
+    padding: 0 1em;
 }
 
 #chn-heading p {
@@ -285,14 +286,14 @@ nav {
     border-radius: 100px;
     padding: 2px 3px;
     font-size: 10px;
-    border: 0.5px solid #957a96;
+    border: 2px solid #957a96;
     margin: 0;
 }
 
 #categories {
     color: #b29fb3;
-    line-height: 1.8;
-    font-size: 14px;
+    line-height: 1.9;
+    font-size: 12px;
 }
 
 #categories a:hover {
@@ -316,7 +317,7 @@ nav {
 
 #ctg-name p {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* direct msgs */
@@ -331,12 +332,13 @@ nav {
 }
 
 #dir-msg a>p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #dir-msg a {
     display: flex;
     align-items: center;
+    padding: 0 1em;
 }
 
 #dir-msg a:hover {
@@ -346,10 +348,13 @@ nav {
 #dir-msg .dm {
     display: flex;
     justify-content: space-between;
+    padding: 0 1em;
+    align-items: center;
 }
 
 #dir-msg .dm>p {
     font-size: 16px;
+    color: #bcadbe;
 }
 
 #dir-msg>a i {
@@ -368,7 +373,7 @@ nav {
 }
 
 #dir-msg p {
-    color: #957a96;
+    color: #957a96; 
 }
 
 /* header */
@@ -488,6 +493,17 @@ header {
     border-radius: 5px;
     border: 1px solid grey;
     padding: 6px 12px;
+    /* position: relative; */
+}
+
+#channel-icons input::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    margin-right: 0.5em;
+    color: #8a898a;
+    position: absolute;
+    top: 10px;
 }
 
 /* channel content */
@@ -582,7 +598,7 @@ header {
 
 #user-comment p {
     max-width: 95%;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 #name img {
@@ -601,8 +617,12 @@ header {
 
 #name {
     align-items: center;
+    margin: 2px 0px;
 }
-
+.keyframes p{
+    margin: 10px 0px;
+    font-size: 13px;
+}
 #user-comment div:last-child {
     display: flex;
     align-items: center;
@@ -615,8 +635,11 @@ header {
 }
 
 #user-comment div:last-child img {
-    height: 20px;
-    margin-right: 5px;
+    height: 18px;
+}
+
+#user-comment div:last-child p {
+    font-size: 12px;
 }
 
 #first-reply {
@@ -646,6 +669,10 @@ header {
     padding-left: 10px;
 }
 
+#sr-user-comment p {
+    font-size: 12px;
+}
+
 #froggy-ss img {
     max-height: 300px;
     margin-top: 5px 0px;
@@ -663,19 +690,31 @@ header {
 }
 
 .sr-profile-replies img {
-    height: 30px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .sr-profile-replie p {
     color: #6a696a;
+    margin-left: 10px;
+    font-size: 12px;
 }
 
 #third-reply-content {
     padding-left: 10px;
 }
-
+#third-reply-content:nth-child(2) {
+    font-size: 14px;
+}
+#third-reply-content a{
+    font-size: 14px;
+    color: #1164a3;
+}
 #third-reply {
     margin-top: 10px;
+}
+#third-reply p{
+    font-size: 12px;
 }
 
 #message-cc i {
@@ -689,23 +728,22 @@ header {
 
 .input-container {
     display: flex;
-    margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #999999;
-    margin-left: 30px;
-    margin-top: 10px;
     position: relative;
+    margin: 10px 15px;
 }
 
 .input-container::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f1fa\f118";
-    /* color: #676667; */
+    color: #676667;
     right: 35px;
     top: 10px;
     position: absolute;
 }
+
 
 .icon {
     padding: 10px;
@@ -716,7 +754,6 @@ header {
 }
 
 .input-field {
-    width: 100%;
     padding: 10px;
     outline: none;
     border: none;
@@ -726,7 +763,7 @@ header {
 
 aside {
     border: 1px solid #ebebeb;
-    width: 30%;
+    width: 40%;
     height: auto;
 }
 
@@ -734,15 +771,16 @@ aside {
     display: flex;
     justify-content: space-between;
     background-color: #f8f8f8;
-    padding: 20px;
+    padding: 20px 10px;
     border: 1px solid #ebebeb;
+    align-items: center;
 }
 
 h2 {
     padding: 20px;
     margin: 0;
     border-bottom: 1px solid rgba(black, 0.1);
-    font-size: 1.1em;
+    font-size: 14px;
     position: relative;
     padding: 0;
 }
@@ -786,7 +824,7 @@ summary {
 }
 
 #content {
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
     border-bottom: 1px solid #ebebeb;
 }
 
@@ -833,7 +871,7 @@ summary {
 #rc {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 #rc p {
