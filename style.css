@@ -38,6 +38,37 @@ legend {
 
 /* part one nav */
 
+/* 600res max */
+
+#max-600res {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    background-color: #3f0d40;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+
+#max-600res a {
+    text-decoration: none;
+    color: white;
+    background-color: #ae21b1a1;
+    border-radius: 2px;
+    padding: 2px 10px;
+}
+
+#max-600res h2 {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+#max-600res .fa-search {
+    margin-right: 22px;
+    color: white;
+}
+
 nav {
     display: flex;
 }
@@ -241,6 +272,11 @@ nav {
     justify-content: space-between;
 }
 
+#ctg-name {
+    text-decoration: none;
+    color: #b29fb3;
+}
+
 #chn-heading p {
     font-size: 16px;
 }
@@ -259,6 +295,15 @@ nav {
     font-size: 14px;
 }
 
+#categories a:hover {
+    background-color: #170218a1;
+}
+
+#categories a:active {
+    background-color: #1164a3;
+    color: white;
+}
+
 #ctg-name {
     display: flex;
     align-items: center;
@@ -274,27 +319,32 @@ nav {
     font-size: 16px;
 }
 
-.showcase {
-    background-color: #1164a3;
-    color: white;
-}
-
 /* direct msgs */
 
 #dir-msg {
     line-height: 1.8;
 }
 
-#dir-msg div>p {
+#dir-msg a {
+    text-decoration: none;
+    color: #957a96;
+}
+
+#dir-msg a>p {
     font-size: 16px;
 }
 
-#dir-msg div {
+#dir-msg a {
     display: flex;
     align-items: center;
 }
 
+#dir-msg a:hover {
+    background-color: #170218a1;
+}
+
 #dir-msg .dm {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -302,7 +352,7 @@ nav {
     font-size: 16px;
 }
 
-#dir-msg>div i {
+#dir-msg>a i {
     margin-right: 5px;
     font-size: 11px;
 }
@@ -312,15 +362,19 @@ nav {
 #dir-msg .lock i {
     color: #2bac76;
 }
-#dir-msg .lock p{
+
+#dir-msg .lock p {
     color: #bcadbe;
 }
-#dir-msg p{
+
+#dir-msg p {
     color: #957a96;
 }
+
 /* header */
 
 #content-area {
+    position: relative;
     margin-top: 10px;
     /* width: 100%; */
 }
@@ -330,6 +384,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 30px;
+    background-color: white;
 }
 
 #channel-title h2 {
@@ -525,6 +580,11 @@ header {
     padding-left: 10px;
 }
 
+#user-comment p {
+    max-width: 95%;
+    font-size: 16px;
+}
+
 #name img {
     height: 20px;
     margin: 0px 5px;
@@ -645,7 +705,6 @@ header {
     right: 35px;
     top: 10px;
     position: absolute;
-
 }
 
 .icon {
@@ -667,6 +726,8 @@ header {
 
 aside {
     border: 1px solid #ebebeb;
+    width: 45%;
+    height: auto;
 }
 
 #heading {
@@ -715,30 +776,48 @@ summary {
 .bold-text {
     color: #676667;
     font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.reg-text {
+    font-size: 12px;
+    margin: 0;
 }
 
 #content {
-    padding: 0px 20px;
+    padding: 20px 20px;
     border-bottom: 1px solid #ebebeb;
 }
 
-.qta {
-    color: #676667;
-    font-weight: bold;
+.about {
+    margin-bottom: 10px;
+}
+
+#content div:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+#content div:nth-child(5) {
+    margin-bottom: 20px;
+}
+
+#content div:nth-child(6) {
+    margin-bottom: 20px;
 }
 
 #questions-try-asking {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 #questions-try-asking img {
-    height: 50px;
+    height: 40px;
 }
 
 #questions-try-asking h4 {
     margin: 0;
+    font-size: 13px;
 }
 
 #questions-try-asking div {
@@ -748,6 +827,7 @@ summary {
 #questions-try-asking p {
     margin: 0px;
     color: #6b6b6b;
+    font-size: 12px;
 }
 
 #rc {
@@ -772,9 +852,39 @@ summary {
 }
 
 #rc div i, p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #rc div i {
     margin-right: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    #max-600res {
+        display: flex;
+        position: sticky;
+        top: 0;
+    }
+    #content-area {
+        margin-top: 0px;
+        height: 100%;
+    }
+    #fixed-input {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
 }
